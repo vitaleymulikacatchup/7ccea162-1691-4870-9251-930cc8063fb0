@@ -1,6 +1,6 @@
 "use client";
 import { ThemeProvider } from "@/providers/ThemeProvider";
-import NavbarStyleApple from '@/components/navbar/NavbarStyleApple';
+import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
 import HeroSplit from '@/components/sections/hero/HeroSplit';
 import SplitAbout from '@/components/sections/about/SplitAbout';
 import FeatureCardThree from '@/components/sections/feature/featureCardThree/FeatureCardThree';

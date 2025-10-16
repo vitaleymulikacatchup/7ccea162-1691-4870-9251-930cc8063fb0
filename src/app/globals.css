@@ -69,11 +69,10 @@
   --width-95: clamp(71.25rem, 95vw, 95rem);
   --width-100: clamp(75rem, 100vw, 100rem);
   --width-content-width: clamp(40rem, 80vw, 100rem);
-  --width-carousel-padding: calc((100vw - var(--width-content-width)) / 2 + 1px - var(--vw-1_5));
+  --width-carousel-padding: calc((100vw - var(--width-content-width)) / 2 + 1px - var(--vw-1_5);
   --width-carousel-padding-controls: calc((100vw - var(--width-content-width)) / 2 + 1px);
   --width-carousel-item-3: calc(var(--width-content-width) / 3 - var(--vw-1_5) / 3 * 2);
   --width-carousel-item-4: calc(var(--width-content-width) / 4 - var(--vw-1_5) / 4 * 3);
-  --width-x-padding-mask-fade: clamp(1.5rem, 4vw, 4rem);
 
   --height-4: 1rem;
   --height-5: 1.25rem;
@@ -135,7 +134,7 @@
     --width-95: 95vw;
     --width-100: 100vw;
     --width-content-width: 80vw;
-    --width-carousel-padding: calc((100vw - var(--width-content-width)) / 2 + 1px - var(--vw-1_5));
+    --width-carousel-padding: calc((100vw - var(--width-content-width)) / 2 + 1px - var(--vw-1_5);
     --width-carousel-padding-controls: calc((100vw - var(--width-content-width)) / 2 + 1px);
     --width-carousel-item-3: var(--width-content-width);
     --width-carousel-item-4: var(--width-content-width);
@@ -290,8 +289,6 @@
   --padding-x-7: var(--vw-1_75);
   --padding-x-8: var(--vw-2);
 
-  --padding-page-padding: calc(2.25rem+var(--vw-1_5)+var(--vw-1_5));
-
   /* margin */
   --margin-1: var(--vw-0_25);
   --margin-2: var(--vw-0_5);
@@ -308,66 +305,6 @@
   --margin-x-4: var(--vw-1);
   --margin-x-5: var(--vw-1_25);
   --margin-x-6: var(--vw-1_5);
-  --margin-x-7: var(--vw-1_75);
-  --margin-x-8: var(--vw-2);
-}
-
-@layer components {}
-
-@layer utilities {
-
-  .card {
-    @apply backdrop-blur-sm bg-gradient-to-br from-card/80 to-card/40 shadow-sm border border-card;
-  }
-
-  .primary-button {
-    @apply bg-gradient-to-b from-primary-cta/83 to-primary-cta;
-    /* background: linear-gradient(rgb(64, 64, 64) 0%, rgb(26, 26, 26) 100%) rgba(0, 0, 0, 0); */
-    box-shadow:
-      color-mix(in srgb, var(--color-background) 25%, transparent) 0px 1px 1px 0px inset,
-      color-mix(in srgb, var(--color-primary-cta) 15%, transparent) 3px 3px 3px 0px;
-  }
-
-  .secondary-button {
-    @apply backdrop-blur-sm bg-gradient-to-br from-secondary-cta/80 to-secondary-cta shadow-sm border border-secondary-cta;
-  }
-
-  .mask-padding-x {
-    -webkit-mask-image: linear-gradient(to right, transparent 0%, black var(--width-x-padding-mask-fade), black calc(100% - var(--width-x-padding-mask-fade)), transparent 100%);
-    mask-image: linear-gradient(to right, transparent 0%, black var(--width-x-padding-mask-fade), black calc(100% - var(--width-x-padding-mask-fade)), transparent 100%);
-  }
-
-  /* ANIMATION */
-
-  .animation-container {
-    animation:
-      fadeInOpacity 0.8s ease-in-out forwards,
-      fadeInTranslate 0.6s forwards;
-  }
-
-  .animation-container-fade {
-    animation: fadeInOpacity 0.8s ease-in-out forwards;
-  }
-
-  @keyframes fadeInOpacity {
-    from {
-      opacity: 0;
-    }
-
-    to {
-      opacity: 1;
-    }
-  }
-
-  @keyframes fadeInTranslate {
-    from {
-      transform: translateY(0.75vh);
-    }
-    to {
-      transform: translateY(0vh);
-    }
-  }
-
 }
 
 * {
@@ -378,7 +315,6 @@
 body {
   background-color: var(--background);
   color: var(--foreground);
-  /* Available fonts: --font-inter-tight, --font-playfair, --font-roboto, --font-open-sans, --font-lato, --font-montserrat, --font-poppins, --font-raleway, --font-ubuntu, --font-nunito */
   font-family: var(--font-inter-tight), sans-serif;
   position: relative;
   min-height: 100vh;
