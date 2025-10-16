@@ -7,14 +7,12 @@ import FeatureCardThree from '@/components/sections/feature/featureCardThree/Fea
 import PricingCardOne from '@/components/sections/pricing/PricingCardOne';
 import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterBase from '@/components/sections/footer/FooterBase';
-
 const assetMap = [
   { "id": "hero-img", "url": "https://images.pexels.com/photos/34301930/pexels-photo-34301930.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "High-End Gaming PC Interior with Colorful RGB Lights" },
   { "id": "feature-img", "url": "https://images.pexels.com/photos/19867468/pexels-photo-19867468.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "Wooden letter tiles spelling SaaS on rustic wood. Ideal for cloud computing and business concepts." },
   { "id": "pricing-img", "url": "https://images.pexels.com/photos/3183197/pexels-photo-3183197.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "Top view of a diverse team collaborating in an office setting with laptops and tablets, promoting cooperation." },
   { "id": "contact-img", "url": "https://images.pexels.com/photos/2265488/pexels-photo-2265488.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "A woman working at a desk using a laptop and smartphone, exemplifying remote work." }
 ];
-
 export default function Home() {
   const navbarItems = [
     {name: "Home", id: "#"},
@@ -23,7 +21,6 @@ export default function Home() {
     {name: "Pricing", id: "pricing"},
     {name: "Features", id: "features"},
   ];
-
   return (
     <ThemeProvider
       defaultButtonVariant="text-stagger"
