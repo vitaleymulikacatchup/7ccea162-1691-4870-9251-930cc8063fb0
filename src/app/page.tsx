@@ -26,7 +26,7 @@ export default function Home() {
 
   return (
     <ThemeProvider
-      defaultButtonVariant="icon-arrow"
+      defaultButtonVariant="text-stagger"
       defaultTextAnimation="entrance-slide"
       borderRadius="rounded"
     >
